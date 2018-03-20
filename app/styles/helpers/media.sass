@@ -7,11 +7,16 @@
   .section__photo
     width: 100%
     order: 1
+    height: calc(50% - 40px)
   .section__info
+    text-align: center
     width: 100%
     order: 2
     align-items: center
     padding-left: 0
+    height: calc(50% - 40px)
+    margin-left: 10px
+    margin-right: 10px
 
 @media only screen and (max-width : 768px)
   .promo__title
@@ -24,6 +29,14 @@
     font-size: 3.25rem
   .promo__description
     font-size: 1.75rem
+
+  .section__title
+    font-size: 2.25rem
+  .section__description
+    font-size: 1.25rem
+    margin-bottom: 5px
+  .section__text
+    font-size: 0.75rem
 
 @media only screen and (max-width : 320px)
   /**/
