@@ -171,3 +171,63 @@
   top: 10%
   transform: translateX(-50%)
   animation: ball 2.25s infinite
+
+.section
+  width: calc(100vw - 40px)
+  height: calc(100vh - 40px)
+  margin: 20px
+  background-color: #fff
+  position: relative
+
+.section__wrapper
+  height: 100%
+  width: 100%
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+
+.section__info
+  text-align: center
+  width: 50%
+  background-color: #fff
+  display: flex
+  justify-content: center
+  align-items: flex-start
+  flex-direction: column
+  padding-left: 60px
+
+.section__title
+  font-size: 3.25rem
+  font-weight: 700
+  color: $main-color
+  line-height: 1.5
+
+.section__description
+  font-weight: 400
+  color: rgba($main-color, 0.6)
+  font-style: italic
+  font-size: 1.5rem
+  line-height: 1.5
+  margin-bottom: 25px
+
+.button
+  display: inline-block
+  color: #fff
+  background-color: $button-color
+  font-size: 0.875rem
+  font-weight: 700
+  text-transform: uppercase
+  padding: 0.875rem 1rem
+  text-align: center
+  vertical-align: middle
+  transition: all 0.25s ease
+  &:hover
+    background-color: #5EA763
+
+.section__photo
+  width: 50%
+  height: auto
+  background-size: cover
+  background-position: center
+
+
