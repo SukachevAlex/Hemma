@@ -3,7 +3,7 @@ html
     head
 
         meta(charset="utf-8")
-        title Title
+        title Hemma guest house
         <!--[if IE]>
         meta(http-equiv='X-UA-Compatible', content="IE = edge")
         <![endif]-->
@@ -31,6 +31,31 @@ html
         meta(name="apple-mobile-web-app-status-bar-style" content="#000")
 
     body
+        header.header(style="background-image: url(img/header/background.jpg)")
+            div.header__wrapper
+                div.top-line.header__top-line
+                    div.menu
+                        div.hamburger.menu__hamburger
+                            div.hamburger__box
+                                div.hamburger__inner
+                        ul.nav
+                            li.nav__item
+                                a.nav__link(href="index.html") Hemma
+                            li.nav__item
+                                a.nav__link(href="#rooms") Rooms
+                            li.nav__item
+                                a.nav__link(href="#food") Food
+                            li.nav__item
+                                a.nav__link(href="#events") Events
+                            li.nav__item
+                                a.nav__link(href="#deals") Deals
+                    div.logo__wrapper(style="background: url(img/header/logo.png)")
+                        a.logo.logo__header(href="index.html")
+                div.promo.header__promo
+                    h1.promo__title Hemma
+                    div.promo__description Our Wonderful Guest House.
+                div.slide-down
+                    div.slide-down__ball
 
 
         script(src="js/jquery.min.js")
