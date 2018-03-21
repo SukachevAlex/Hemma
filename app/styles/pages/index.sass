@@ -178,6 +178,7 @@
   margin: 20px
   background-color: #fff
   position: relative
+  overflow-x: hidden
 
 .section_half
   height: calc(50vh - 30px)
@@ -274,25 +275,25 @@
   line-height: 1.6
   margin-bottom: 1.6rem
 
-.news__item
+.gallery__item
   width: 25%
 
-.news__link
+.gallery__link
   display: block
   width: 100%
   height: 100%
   position: relative
-  &:hover .news__title
+  &:hover .gallery__title, &:hover .gallery__text
     margin-top: 0
     opacity: 1
-  &:hover .news__overlay
+  &:hover .gallery__overlay
     background-color: rgba(51, 51, 51, 0.5)
 
-.news__photo
+.gallery__photo
   width: 100%
   height: 100%
 
-.news__overlay
+.gallery__overlay
   width: 100%
   height: 100%
   display: flex
@@ -304,7 +305,7 @@
   background-color: rgba(51, 51, 51, 0)
   transition: all 0.35s ease
 
-.news__title
+.gallery__title
   font-size: 1.5rem
   color: #fff
   text-align: center
@@ -313,6 +314,18 @@
   margin-right: 20px
   opacity: 0
   transition: all 0.35s ease
+
+.gallery__text
+  color: #fff
+  font-size: 1.25rem
+  line-height: 1.5
+  text-align: center
+  margin-top: 50px
+  margin-left: 20px
+  margin-right: 20px
+  opacity: 0
+  transition: all 0.35s ease
+  overflow: hidden
 
 .section__background-photo
   width: 100%
