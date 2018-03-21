@@ -18,11 +18,32 @@
     margin-left: 10px
     margin-right: 10px
 
+  .section_half
+    height: calc(100vh - 40px)
+  .section__info_half
+    width: 50%
+    order: 1
+    margin: 0
+    justify-content: center
+    align-items: center
+  .news__item
+    width: 50%
+    order: 2
+
+
 @media only screen and (max-width : 768px)
   .promo__title
     font-size: 4.5rem
   .promo__description
     font-size: 2rem
+  .section_half
+    height: 100%
+  .section__info_half
+    width: 100%
+    height: calc(50vh - 10px)
+  .news__item
+    width: 100%
+    height: calc(50vh - 10px)
 
 @media only screen and (max-width : 480px)
   .promo__title
