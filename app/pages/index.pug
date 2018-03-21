@@ -57,13 +57,10 @@ html
                 div.slide-down
                     div.slide-down__ball
 
-
-
-
         main
             section.section.section_discover
                 div.section__wrapper
-                    div.section__info
+                    div.section__info.section__info_half
                         h2.section__title Discover Hemma
                         div.section__description Luxury must be comfortable.
                         a.button.section__button(href="#") About us
@@ -71,7 +68,7 @@ html
 
             section.section.section_rooms
                 div.section__wrapper.section__wrapper_reverse
-                    div.section__info
+                    div.section__info.section__info_half
                         h2.section__title Rooms
                         div.section__description We love to make you feel at home.
                         p.section__text Our Luxury Rooms are our most spacious rooms and provide great getaway accommodations. Rooms provide one King or one Queen or two Queens with some rooms providing extra sitting rooms and sofa beds.
@@ -80,7 +77,7 @@ html
 
             section.section.section_food
                 div.section__wrapper
-                    div.section__info
+                    div.section__info.section__info_half
                         h2.section__title Food
                         div.section__description Taste our gourmet delicacies.
                         p.section__text Chefs, caterers, hotels, specialty food store chains, gourmet shops, and fine grocery stores alike appreciate our philosophy, our DOC expertise, our unique product mix and knowledgeable service.
@@ -89,7 +86,7 @@ html
 
             section.section.section_rooms
                 div.section__wrapper.section__wrapper_reverse
-                    div.section__info
+                    div.section__info.section__info_half
                         h2.section__title Events
                         div.section__description You will never be bored.
                         p.section__text With our extensive knowledge of the area we can tailor your mountain bike rides or hikes to suit your abilities and preferences.
@@ -99,7 +96,7 @@ html
 
             section.section.section_news.section_half
                 div.section__wrapper
-                    div.section__info.section__info_half
+                    div.section__info.section__info_quarter
                         h2.section__title News
                         div.section__description Latest from the blog
                         a.button.button_white.section__button(href="#") Latest events
@@ -125,6 +122,38 @@ html
                         h2.section__title.section__title_white St. Valentine Promo
                         div.section__description.section__description_white A romantic weekend for couples. 50% off.
                         a.button.button_white.section__button.button_no-border(href="#") Book it now
+
+            section.section.section_guestbook
+                div.section__wrapper
+                    div.section__info_slider
+                        h2.section__title The Guestbook
+                        div.section__description What our guests told about us.
+                        div.guestbook-slider
+                            div.guestbook-slider-js
+                                div.guestbook-slider__item
+                                    img.guestbook-slider__photo(src="img/section_guestbook/photo-1.jpg")
+                                    div.guestbook-slider__text I never meant to cause you any sorrow. I never meant to cause you any pain. I only wanted to one time see you laughing. I only wanted to see you laughing in the purple rain.
+                                    div.guestbook-slider__author Emma Stone
+                                div.guestbook-slider__item
+                                    img.guestbook-slider__photo(src="img/section_guestbook/photo-2.jpg")
+                                    div.guestbook-slider__text People always told me be careful of what you do And dont go around breaking young girls' hearts And mother always told me be careful of who you love And be careful of what you do cause the lie becomes the truth.
+                                    div.guestbook-slider__author Samuel Leroy Jackson
+                                div.guestbook-slider__item
+                                    img.guestbook-slider__photo(src="img/section_guestbook/photo-3.jpg")
+                                    div.guestbook-slider__text Oh, a storm is threat'ning My very life today If I don't get some shelter Oh yeah, I'm gonna fade away.
+                                    div.guestbook-slider__author Robert Downey Jr.
+                                div.guestbook-slider__item
+                                    img.guestbook-slider__photo(src="img/section_guestbook/photo-4.jpg")
+                                    div.guestbook-slider__text You can find me in the club, bottle full of bub Look mami I got the X if you into taking drugs I'm into having sex, I ain't into makin love So come give me a hug if you into getting rubbed.
+                                    div.guestbook-slider__author Angelina Jolie
+                                div.guestbook-slider__item
+                                    img.guestbook-slider__photo(src="img/section_guestbook/photo-5.jpg")
+                                    div.guestbook-slider__text Buddy you're a young man hard man Shoutin' in the street gonna take on the world some day You got blood on yo' face You big disgrace Wavin' your banner all over the place.
+                                    div.guestbook-slider__author Matt Damon
+
+
+                        a.button.section__button(href="#") Read all posts
+
 
         script(src="js/jquery.min.js")
         script(src="js/libs.min.js")

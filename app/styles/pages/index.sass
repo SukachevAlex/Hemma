@@ -196,18 +196,33 @@
   order: 1
 
 .section__info
-  width: 50%
+  width: 100%
   background-color: #fff
   display: flex
   justify-content: center
-  align-items: flex-start
+  align-items: center
   flex-direction: column
-  padding-left: 60px
+
+.section__info_slider
+  width: 90%
+  height: 65%
+  position: relative
+  top: 50%
+  transform: translateY(-50%)
+  margin: 0 auto
+  text-align: center
+
 
 .section__info_half
+  width: 50%
+  padding-left: 60px
+  align-items: flex-start
+
+.section__info_quarter
   width: 25%
   align-items: center
   padding-left: 0
+  text-align: center
 
 .section__title
   font-size: 3.25rem
@@ -216,7 +231,6 @@
   line-height: 1.5
 
 .section__description
-  width: 90%
   font-weight: 400
   color: rgba($main-color, 0.6)
   font-style: italic
@@ -328,3 +342,38 @@
     color: rgba($main-color, 0.7)
     border-color: transparent
 
+.guestbook-slider__item
+  margin: 15px auto 40px
+
+.guestbook-slider__photo
+  border-radius: 50%
+  margin: 0 auto 25px
+
+.guestbook-slider__text
+  font-size: 1.2rem
+  color: rgba(51,51,51,0.85)
+  margin-bottom: 25px
+
+.guestbook-slider__author
+  font-weight: 700
+  color: rgba(51,51,51,0.6)
+  font-size: 1rem
+  &::before
+    content: '\2014'
+    padding-right: 0.5rem
+  &::after
+    content: '\2014'
+    padding-left: 0.5rem
+
+.slick-dots li button
+  width: 8px
+  height: 8px
+  background-color: #AEB1B5
+  border-radius: 50%
+  transition: all 0.2s ease
+
+.slick-dots li.slick-active button
+  background-color: #fff
+  width: 16px
+  height: 16px
+  border: 1px solid #AEB1B5

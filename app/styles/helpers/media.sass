@@ -7,29 +7,34 @@
   .section__photo
     width: 100%
     order: 1
-    height: calc(50% - 40px)
+    height: calc(50vh - 30px)
   .section__info
     text-align: center
     width: 100%
     order: 2
     align-items: center
     padding-left: 0
-    height: calc(50% - 40px)
-
+    height: calc(100vh - 40px)
   .section_half
     height: calc(100vh - 40px)
   .section_wide
     height: calc(50vh - 20px)
   .section__info_half
-    width: 50%
+    height: calc(50vh - 40px)
+    width: 100%
     order: 1
     justify-content: center
     align-items: center
+  .section__info_quarter
+    height: calc(50vh - 20px)
+    width: 50%
   .news__item
     width: 50%
     height: 50%
     order: 2
 
+  .section__wrapper_reverse .section__info
+    order: 1
 
 @media only screen and (max-width : 768px)
   .promo__title
@@ -41,6 +46,9 @@
   .section_wide
     height: calc(50vh - 30px)
   .section__info_half
+    width: 100%
+    height: calc(50vh - 10px)
+  .section__info_quarter
     width: 100%
     height: calc(50vh - 10px)
   .news__item
@@ -60,6 +68,12 @@
     margin-bottom: 5px
   .section__text
     font-size: 0.75rem
+
+  .section__info_slider
+    height: 100%
+    margin-top: 20px
+  .section_guestbook
+    height: 110vh
 
 @media only screen and (max-width : 320px)
   /**/
