@@ -17,12 +17,13 @@ $(document).ready(function() {
         autoplaySpeed: 5000,
         responsive: [
             {
-                breakpoint: 768,
+                breakpoint: 480,
                 settings: {
                     dots: false
                 }
             }
         ]
     });
+
 
 });
