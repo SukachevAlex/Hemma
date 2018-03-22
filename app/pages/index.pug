@@ -38,7 +38,7 @@ html
                         div.hamburger.menu__hamburger
                             div.hamburger__box
                                 div.hamburger__inner
-                        ul.nav
+                        ul.nav.nav_header
                             li.nav__item
                                 a.nav__link(href="index.html") Hemma
                             li.nav__item
@@ -49,16 +49,16 @@ html
                                 a.nav__link(href="#events") Events
                             li.nav__item
                                 a.nav__link(href="#deals") Deals
-                    div.logo__wrapper(style="background-image: url(img/header/logo.png)")
+                    div.logo__image.logo__image_header(style="background-image: url(img/header/logo.png)")
                         a.logo.logo__header(href="index.html")
                 div.promo.header__promo
                     h1.promo__title Hemma
                     div.promo__description Our Wonderful Guest House.
-                div.slide-down
+                a.slide-down(href="#section_discover")
                     div.slide-down__ball
 
         main
-            section.section.section_discover
+            section.section.section_discover#section_discover
                 div.section__wrapper
                     div.section__info.section__info_half
                         h2.section__title Discover Hemma
@@ -159,8 +159,7 @@ html
                         div.section__description In the heart of Sweden.
                         p.section__text At vero Callipho et post eum Diodorus, cum is alter voluptatem adamavisset, alter vacuitatem doloris, neuter honestate carere potuit, quae est a nostris laudata maxime. Et hanc quidem primam exigam a te operam, ut audias me quae a te dicta sunt refellentem.
                         a.button.section__button(href="#") View on maps
-                    div.section__map
-                        iframe(src="https://yandex.ru/map-widget/v1/?um=constructor%3Af9ce3423cec6827d5913e88cf9e11e3ffb18d88aece0f14129a7c7cd9e1cadf1&amp;source=constructor" width="100%" height="100%" frameborder="0")
+                    div.section__map#map
             section.section.section_pics.section_half
                 div.section__wrapper
                     div.section__info.section__info_quarter
@@ -182,7 +181,43 @@ html
                             img.gallery__photo(src="img/section_pics/photo-3.jpg" alt="A Pair of Shoes")
                             div.gallery__overlay
                                 p.gallery__text Climb every mountain especially this one. It will take you about 2 hrs and give you some good looking glutes. ___________________________________ #socality #travelandcamp #explorealberta...
+        footer.footer
+            div.footer__wrapper
+                div.social__wrapper_footer
+                    div.logo__image.logo__image_footer(style="background-image: url(img/footer/logo.png)")
+                        a.logo.logo__footer(href="index.html")
+                    div.social
+                        a.social__item.social__item_facebook(href="https://facebook.com")
+                        a.social__item.social__item_instagram(href="https://instagram.com")
+                        a.social__item.social__item_youtube(href="https://youtube.com")
+
+                div.news__wrapper Latest News
+                    ul.news.news_footer
+                        li.news__item
+                            a.news__link(href="#") View from the Bridge
+                        li.news__item
+                            a.news__link(href="#") The North Falls
+                        li.news__item
+                            a.news__link(href="#") A Pair of Shoes
+                        li.news__item
+                            a.news__link(href="#") A Day into the Wild
+                        li.news__item
+                            a.news__link(href="#") Hello world!
+                div.nav__wrapper Menu
+                    ul.nav.nav_footer
+                        li.nav__item
+                            a.nav__link.nav__link_no-border(href="index.html") Hemma
+                        li.nav__item
+                            a.nav__link.nav__link_no-border(href="#rooms") Rooms
+                        li.nav__item
+                            a.nav__link.nav__link_no-border(href="#food") Food
+                        li.nav__item
+                            a.nav__link.nav__link_no-border(href="#events") Events
+                        li.nav__item
+                            a.nav__link.nav__link_no-border(href="#deals") Deals
+
 
         script(src="js/jquery.min.js")
         script(src="js/libs.min.js")
         script(src="js/main.js")
+        script(type="text/javascript" src="https://api-maps.yandex.ru/2.1/?lang=ru_RU")

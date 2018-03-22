@@ -76,6 +76,10 @@
   top: 6px
 
 .nav
+  transition: all 0.3s ease
+
+.nav_header
+  font-size: 3rem
   background-color: #fff
   width: 100%
   height: 0
@@ -90,8 +94,8 @@
   flex-direction: column
   opacity: 0
   visibility: hidden
-  transition: all 0.3s ease
   z-index: 1
+
 
 .visible
   opacity: 1
@@ -99,8 +103,9 @@
   height: 100%
   
 .nav__link
+  font-weight: 400
   color: $main-color
-  font-size: 3rem
+  font-size: inherit
   position: relative
   &::after
     content: ""
@@ -117,16 +122,20 @@
     &::after
       width: 100%
 
-.logo__wrapper
-  position: absolute
-  bottom: 17%
-  left: 50%
-  transform: translateX(-50%)
+.logo__image
   width: 60px
   height: 60px
   background-repeat: no-repeat
   background-position: center
   background-size: cover
+
+.logo__image_header
+  position: absolute
+  bottom: 17%
+  left: 50%
+  transform: translateX(-50%)
+  background-size: cover
+
 
 .logo__header
   display: block
@@ -178,7 +187,6 @@
   margin: 20px
   background-color: #fff
   position: relative
-  overflow-x: hidden
 
 .section_half
   height: calc(50vh - 30px)
@@ -401,3 +409,72 @@
   width: 50%
   height: 100%
 
+.footer
+  background-color: #fff
+  padding: 55px 40px 100px
+  
+.footer__wrapper
+  display: flex
+  justify-content: space-around
+  align-items: center
+  flex-wrap: wrap
+
+.social__wrapper_footer
+  width: 42%
+  display: flex
+  flex-direction: column
+
+.nav_footer, .news_footer
+  font-size: 1rem
+  margin-top: 20px
+
+
+.nav__link_no-border
+  &::after
+    content: ""
+    display: none
+  &:hover
+    color: #B39164
+
+.news__link
+  font-weight: 400
+  color: $main-color
+  &:hover
+    color: #B39164
+
+.nav__wrapper, .news__wrapper
+  font-size: 1rem
+  font-weight: 700
+  color: $main-color
+  width: 20%
+
+.logo__image_footer
+  margin-bottom: 30px
+  position: relative
+  left: 15px
+
+.social__item
+  cursor: pointer
+  width: 20px
+  height: 20px
+  display: inline-block
+  margin-right: 10px
+  background-repeat: no-repeat
+  background-position: center
+  opacity: 0.7
+  transition: all 0.25s ease
+  &:last-child
+    margin-right: 0
+  &:hover
+    opacity: 1
+
+.social__item_facebook
+  background-image: url("../../img/svg/facebook-icon.svg")
+  background-size: 100%
+
+.social__item_instagram
+  background-image: url("../../img/svg/instagram-icon.svg")
+  background-size: 100%
+.social__item_youtube
+  background-image: url("../../img/svg/youtube-icon.svg")
+  background-size: 100%
