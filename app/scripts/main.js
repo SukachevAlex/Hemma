@@ -49,3 +49,7 @@ $(document).ready(function() {
     });
 
 });
+
+$(window).on('load', function() {
+    $('.preloader__wrapper').delay(500).fadeOut('slow');
+});

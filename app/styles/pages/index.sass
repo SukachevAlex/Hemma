@@ -478,3 +478,205 @@
 .social__item_youtube
   background-image: url("../../img/svg/youtube-icon.svg")
   background-size: 100%
+
+.preloader__wrapper
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background-color: #fff
+  z-index: 100
+  display: flex
+  justify-content: center
+  align-items: center
+
+.preloader
+  width: 40vw
+  height: 40vw
+  position: absolute
+  left: 0
+  right: 0
+  top: 0
+  bottom: 0
+  margin: auto
+  overflow: hidden
+
+.common
+  height: 5vw
+  max-height: 100%
+  overflow: auto
+  width: 2vw
+  margin: auto
+  max-width: 100%
+  position: absolute
+  background-color: transparent
+  border-radius: 0vw 10vw 0vw 10vw
+  box-shadow: inset 0vw 0vw 0vw .1vw #17E1E6, 0vw 0vw 1.5vw 0vw #17E1E6
+
+.one
+  transform: rotate(45deg)
+  left: 0
+  right: 0
+  top: 0
+  bottom: 7.5vw
+
+.two
+  transform: rotate(90deg)
+  left: 5.5vw
+  right: 0
+  top: 0
+  bottom: 5.5vw
+
+.three
+  transform: rotate(135deg)
+  left: 7.5vw
+  right: 0
+  top: 0
+  bottom: 0
+
+.four
+  transform: rotate(180deg)
+  left: 5.5vw
+  right: 0
+  top: 5.5vw
+  bottom: 0
+
+.five
+  transform: rotate(225deg)
+  left: 0
+  right: 0
+  top: 7.5vw
+  bottom: 0
+
+.six
+  transform: rotate(270deg)
+  left: 0
+  right: 5.5vw
+  top: 5.5vw
+  bottom: 0
+
+.seven
+  transform: rotate(315deg)
+  left: 0
+  right: 7.5vw
+  top: 0
+  bottom: 0
+
+.eight
+  transform: rotate(360deg)
+  left: 0
+  right: 5.5vw
+  top: 0
+  bottom: 5.5vw
+
+.one
+  animation: one 1s ease infinite
+
+@keyframes one
+  0%,
+  100%
+  50%
+    background: transparent
+    box-shadow: inset 0vw 0vw 0vw .1vw #a4c8cb, 0vw 0vw 1.5vw 0vw #a4c8cb
+
+.two
+  animation: two 1s .125s ease infinite
+
+@keyframes two
+  0%,
+  100%
+  50%
+    background: transparent
+    box-shadow: inset 0vw 0vw 0vw .1vw #a4c8cb, 0vw 0vw 1.5vw 0vw #a4c8cb
+
+
+.three
+  animation: three 1s .25s ease infinite
+
+@keyframes three
+  0%,
+  100%
+  50%
+    background: transparent
+    box-shadow: inset 0vw 0vw 0vw .1vw #a4c8cb, 0vw 0vw 1.5vw 0vw #a4c8cb
+
+
+.four
+  animation: four 1s .375s ease infinite
+
+@keyframes four
+  0%,
+  100%
+  50%
+    background: transparent
+    box-shadow: inset 0vw 0vw 0vw .1vw #a4c8cb, 0vw 0vw 1.5vw 0vw #a4c8cb
+
+.five
+  animation: five 1s .5s ease infinite
+
+@keyframes five
+  0%,
+  100%
+  50%
+    background: transparent
+    box-shadow: inset 0vw 0vw 0vw .1vw #a4c8cb, 0vw 0vw 1.5vw 0vw #a4c8cb
+
+.six
+  animation: six 1s .625s ease infinite
+
+@keyframes six
+  0%,
+  100%
+  50%
+    background: transparent
+    box-shadow: inset 0vw 0vw 0vw .1vw #a4c8cb, 0vw 0vw 1.5vw 0vw #a4c8cb
+
+.seven
+  animation: seven 1s .750s ease infinite
+
+@keyframes seven
+  0%,
+  100%
+  50%
+    background: transparent
+    box-shadow: inset 0vw 0vw 0vw .1vw #a4c8cb, 0vw 0vw 1.5vw 0vw #a4c8cb
+
+.eight
+  animation: eight 1s .875s ease infinite
+
+@keyframes eight
+  0%,
+  100%
+  50%
+    background: transparent
+    box-shadow: inset 0vw 0vw 0vw .1vw #a4c8cb, 0vw 0vw 1.5vw 0vw #a4c8cb
+
+.preloader
+  animation: preloader 5s linear infinite
+
+@keyframes preloader
+  from
+    transform: rotate(0deg)
+  to
+    transform: rotate(-360deg)
+
+
+.progress
+  animation: progress 15s ease
+
+@keyframes progress
+  0%
+    left: -24vw
+  10%
+    left: -20vw
+  30%
+    left: -16vw
+  50%
+    left: -12vw
+  65%
+    left: -10vw
+  80%
+    left: -4vw
+  100%
+    left: 0
