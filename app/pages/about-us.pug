@@ -1,0 +1,112 @@
+doctype html
+html
+    head
+        meta(charset="utf-8")
+        title About us
+        meta(http-equiv="X-UA-Compatible" content="IE = edge")
+        meta(name="viewport" content="width=device-width,initial-scale=1")
+        meta(name="keywords" content="")
+        meta(name="description" content="")
+        meta(property="og:image" content="path_to_image")
+        link(rel="stylesheet" type="text/css" href="css/main.css")
+        link(rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png")
+        link(rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png")
+        link(rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png")
+        link(rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png")
+        link(rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png")
+        link(rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png")
+        link(rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png")
+        link(rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png")
+        link(rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png")
+        link(rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png")
+        link(rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png")
+        link(rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png")
+        link(rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png")
+        meta(name="apple-mobile-web-app-status-bar-style" content="#fff")
+        meta(name="theme-color" content="#ffffff")
+
+    body
+        header.header.header_half(style="background-image: url(img/page_about-us/background.jpg)")
+            div.header__wrapper.header__wrapper_dark
+                div.top-line.header__top-line
+                    div.menu
+                        div.hamburger.menu__hamburger
+                            div.hamburger__box
+                                div.hamburger__inner
+                        ul.nav.nav_header
+                            li.nav__item
+                                a.nav__link(href="index.html") Hemma
+                            li.nav__item
+                                a.nav__link(href="#rooms") Rooms
+                            li.nav__item
+                                a.nav__link(href="#food") Food
+                            li.nav__item
+                                a.nav__link(href="#events") Events
+                            li.nav__item
+                                a.nav__link(href="#deals") Deals
+                    div.logo__image.logo__image_header(style="background-image: url(img/header/logo.png)")
+                        a.logo.logo__header(href="index.html")
+                div.promo.header__promo
+                    h1.promo__title.promo__title_small About Us
+                    div.promo__description.promo__description_small Our Identity, our Philosophy.
+
+        main
+            section.section.section_about-us
+                div.about
+                    h3.about__header Welcome to Hemma House
+                    p.about__text Stay in our four star lakeside accommodation, whether you choose one of our log chalets or a contemporary apartment, you will look over stunning views of the valley. Perhaps go for a gentle stroll around the local village, a refreshing swim in the beautifully clear lake or a more energetic mountain walk or bike ride. You could also try out some of the exciting water sports on offer and after all of that you won’t be able to resist the delicious local cuisine at one of the traditional local eateries.
+                    h4.about__sub-header Design credits: Workshop APD
+                    br
+                    h3.about__header Were we are
+                    p.about__text We are a 40 birth campsite open to caravans, motor homes and tents, situated in the picturesque New forest. We are open between March and November. Please note we can only accommodate vehicles up to 24’ in length.
+                    div.about__map#map
+                    br
+                    h3.about__header Contact Us
+                    form.about__form
+                        input.about-form__input(type="text" name="name" placeholder="Full name")
+                        input.about-form__input(type="email" name="email" placeholder="Email address")
+                        input.about-form__input(type="text" name="subject" placeholder="Subject")
+                        textarea.about-form__textarea(name="textarea" rows="10" placeholder="Don`t forget that kindness is all!")
+                        input.about-form__button.button(type="submit" name="send" value="Send a message")
+
+
+
+        footer.footer
+            div.footer__wrapper
+                div.social__wrapper_footer
+                    div.logo__image.logo__image_footer(style="background-image: url(img/footer/logo.png)")
+                        a.logo.logo__footer(href="index.html")
+                    div.social
+                        a.social__item.social__item_facebook(href="https://facebook.com")
+                        a.social__item.social__item_instagram(href="https://instagram.com")
+                        a.social__item.social__item_youtube(href="https://youtube.com")
+
+                div.news__wrapper Latest News
+                    ul.news.news_footer
+                        li.news__item
+                            a.news__link(href="#") View from the Bridge
+                        li.news__item
+                            a.news__link(href="#") The North Falls
+                        li.news__item
+                            a.news__link(href="#") A Pair of Shoes
+                        li.news__item
+                            a.news__link(href="#") A Day into the Wild
+                        li.news__item
+                            a.news__link(href="#") Hello world!
+                div.nav__wrapper Menu
+                    ul.nav.nav_footer
+                        li.nav__item
+                            a.nav__link.nav__link_no-border(href="index.html") Hemma
+                        li.nav__item
+                            a.nav__link.nav__link_no-border(href="#rooms") Rooms
+                        li.nav__item
+                            a.nav__link.nav__link_no-border(href="#food") Food
+                        li.nav__item
+                            a.nav__link.nav__link_no-border(href="#events") Events
+                        li.nav__item
+                            a.nav__link.nav__link_no-border(href="#deals") Deals
+
+        script(src="js/jquery.min.js")
+        script(src="js/libs.min.js")
+        script(src="js/main.js")
+        script(type="text/javascript" src="https://api-maps.yandex.ru/2.1/?lang=ru_RU")
