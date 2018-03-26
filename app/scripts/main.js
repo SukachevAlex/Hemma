@@ -25,21 +25,27 @@ $(document).ready(function() {
         ]
     });
 
+
     ymaps.ready(function () {
-        var myMap = new ymaps.Map('map', {
-                center: [55.751574, 37.573856],
-                zoom: 7,
-                type: 'yandex#hybrid',
-                controls: []
-            }, {
-                suppressMapOpenBlock: true
-            }),
+        if ($("#map").length) {
+            var myMap = new ymaps.Map('map', {
+                    center: [55.751574, 37.573856],
+                    zoom: 7,
+                    type: 'yandex#hybrid',
+                    controls: []
+                }, {
+                    suppressMapOpenBlock: true
+                }),
 
-            myPlacemark = new ymaps.Placemark(myMap.getCenter(), {}, {})
+                myPlacemark = new ymaps.Placemark(myMap.getCenter(), {}, {});
 
-        myMap.geoObjects
-            .add(myPlacemark);
+            myMap.geoObjects
+                .add(myPlacemark);
+        }
+
+
     });
+
 
     $(document).on('click', 'a[href^="#"]', function (event) {
         event.preventDefault();
