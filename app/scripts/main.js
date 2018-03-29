@@ -58,6 +58,22 @@ $(document).ready(function() {
                 .add(myPlacemark);
         }
 
+        if ($("#map_norway").length) {
+            var myMap = new ymaps.Map('map_norway', {
+                    center: [64.570968, 11.966377],
+                    zoom: 9,
+                    type: 'yandex#hybrid',
+                    controls: []
+                }, {
+                    suppressMapOpenBlock: true
+                }),
+
+                myPlacemark = new ymaps.Placemark(myMap.getCenter(), {}, {});
+
+            myMap.geoObjects
+                .add(myPlacemark);
+        }
+
 
     });
 
