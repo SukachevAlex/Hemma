@@ -42,6 +42,21 @@ $(document).ready(function() {
             myMap.geoObjects
                 .add(myPlacemark);
         }
+        if ($("#map_scotland").length) {
+            var myMap = new ymaps.Map('map_scotland', {
+                    center: [56.879663, -4.589376],
+                    zoom: 9,
+                    type: 'yandex#hybrid',
+                    controls: []
+                }, {
+                    suppressMapOpenBlock: true
+                }),
+
+                myPlacemark = new ymaps.Placemark(myMap.getCenter(), {}, {});
+
+            myMap.geoObjects
+                .add(myPlacemark);
+        }
 
 
     });
