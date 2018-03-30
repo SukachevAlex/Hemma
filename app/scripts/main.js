@@ -88,5 +88,14 @@ $(document).ready(function() {
 });
 
 $(window).on('load', function() {
-    $('.preloader__wrapper').delay(500).fadeOut('slow');
+    var counter = 0;
+    var i = setInterval(function(){
+        $('.percentage').html(counter + '%');
+        $('.progress-bar').css('width', counter + '%');
+        counter++;
+        if(counter === 101) {
+            clearInterval(i);
+            $('.preloader__wrapper').fadeOut('slow');
+        }
+    }, 10);
 });
